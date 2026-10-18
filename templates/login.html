@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="container vh-100 d-flex justify-content-center align-items-center">
+
+    <div class="card login-card shadow-lg p-4"
+     style="max-width:400px; width:100%;">
+
+        <div class="text-center mb-4">
+
+    <img src="{{ url_for('static', filename='logo.png') }}"
+         width="90"
+         height="90"
+         class="mb-3">
+
+    <h2 class="fw-bold">
+        Examination Cell
+    </h2>
+
+    <p class="text-muted">
+        Admin Login
+    </p>
+
+</div>
+
+
+
+        {% if error %}
+
+        <div class="alert alert-danger">
+
+            {{ error }}
+
+        </div>
+
+        {% endif %}
+
+
+
+
+        <form method="POST" action="/">
+
+
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Username
+                </label>
+
+
+                <input type="text"
+                       name="username"
+                       class="form-control"
+                       placeholder="Enter Username"
+                       required>
+
+            </div>
+
+
+
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Password
+                </label>
+
+
+                <input type="password"
+                       name="password"
+                       class="form-control"
+                       placeholder="Enter Password"
+                       required>
+
+            </div>
+            <div class="mb-3">
+
+    <label class="form-label">
+        Enter CAPTCHA
+    </label>
+
+    <div class="d-flex align-items-center gap-2 mb-2">
+
+        <span class="captcha-box">
+    {{ captcha }}
+</span>
+
+    </div>
+
+
+    <input type="text"
+           name="captcha"
+           class="form-control"
+           placeholder="Enter CAPTCHA"
+           required>
+
+</div>
+
+
+
+
+            <button type="submit"
+                    class="btn btn-primary w-100">
+
+                Login
+
+            </button>
+
+
+        </form>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+{% endblock %}

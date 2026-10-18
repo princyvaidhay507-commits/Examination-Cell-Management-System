@@ -1,0 +1,590 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
+}
+
+
+/* ===========================
+      LOGIN PAGE
+=========================== */
+
+.login-container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:420px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 8px 30px rgba(0,0,0,.2);
+}
+
+.login-box h2{
+    color:#fff;
+    text-align:center;
+    margin-bottom:30px;
+    font-weight:600;
+}
+
+.form-control{
+    border-radius:10px;
+    margin-bottom:18px;
+}
+
+.btn-login{
+    width:100%;
+    background:#fff;
+    color:#007bff;
+    border:none;
+    border-radius:10px;
+    padding:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-login:hover{
+    background:#007bff;
+    color:#fff;
+}
+
+
+/* ===========================
+      SIDEBAR
+=========================== */
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#0d6efd;
+    position:fixed;
+    left:0;
+    top:0;
+    padding-top:30px;
+}
+
+.sidebar h3{
+    color:#fff;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.sidebar a{
+    display:block;
+    color:#fff;
+    padding:15px 25px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:rgba(255,255,255,.2);
+}
+
+
+/* ===========================
+      CONTENT
+=========================== */
+
+.content{
+    margin-left:260px;
+    padding:30px;
+}
+
+.content h2{
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+
+/* ===========================
+      CARDS
+=========================== */
+
+.card-box{
+    border:none;
+    border-radius:15px;
+    color:#fff;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.card-blue{
+    background:#0d6efd;
+}
+
+.card-green{
+    background:#198754;
+}
+
+.card-red{
+    background:#dc3545;
+}
+
+.card-orange{
+    background:#fd7e14;
+}
+
+.card-box h4{
+    font-size:30px;
+    margin-top:10px;
+}
+
+
+/* ===========================
+      TABLE
+=========================== */
+
+.table{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.table thead{
+    background:#0d6efd;
+    color:#fff;
+}
+
+.table td,
+.table th{
+    vertical-align:middle;
+}
+
+
+/* ===========================
+      BUTTONS
+=========================== */
+
+.btn{
+    border-radius:8px;
+}
+
+.btn-primary{
+    padding:8px 18px;
+}
+
+.btn-success{
+    padding:8px 18px;
+}
+
+.btn-danger{
+    padding:8px 18px;
+}
+
+.btn-warning{
+    padding:8px 18px;
+}
+
+
+/* ===========================
+      FORM
+=========================== */
+
+.form-box{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.form-label{
+    font-weight:500;
+}
+
+
+/* ===========================
+      SEARCH
+=========================== */
+
+.search-box{
+    margin-bottom:20px;
+}
+
+.search-box input{
+    border-radius:10px;
+}
+
+
+/* ===========================
+      FOOTER
+=========================== */
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:#666;
+    font-size:14px;
+}
+ /* ===========================
+      RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width:992px){
+
+    .sidebar{
+        width:80px;
+    }
+
+    .sidebar h3{
+        display:none;
+    }
+
+    .sidebar a{
+        text-align:center;
+        padding:18px 10px;
+        font-size:14px;
+    }
+
+    .content{
+        margin-left:90px;
+        padding:20px;
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+
+    .content{
+        margin-left:0;
+    }
+
+    .login-box{
+        width:90%;
+    }
+
+    .card-box{
+        margin-bottom:15px;
+    }
+
+}
+
+
+@media (max-width:576px){
+
+    .content{
+        padding:15px;
+    }
+
+    .table{
+        font-size:13px;
+    }
+
+    .btn{
+        font-size:13px;
+    }
+
+}
+
+
+/* ===========================
+      INPUT EFFECTS
+=========================== */
+
+.form-control{
+    transition:.3s;
+}
+
+.form-control:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 10px rgba(13,110,253,.25);
+}
+
+
+/* ===========================
+      BUTTON ANIMATION
+=========================== */
+
+.btn{
+    transition:.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 15px rgba(0,0,0,.2);
+}
+
+
+/* ===========================
+      CARD ANIMATION
+=========================== */
+
+.card-box{
+    transition:.3s;
+}
+
+.card-box:hover{
+    transform:translateY(-6px);
+}
+
+
+/* ===========================
+      TABLE HOVER
+=========================== */
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:#eef6ff;
+}
+
+
+/* ===========================
+      SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0d6efd;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#084298;
+}
+
+
+/* ===========================
+      DARK MODE
+=========================== */
+
+.dark-mode{
+    background:#121212;
+    color:#fff;
+}
+
+.dark-mode .content{
+    color:#fff;
+}
+
+.dark-mode .table{
+    background:#1e1e1e;
+    color:#fff;
+}
+
+.dark-mode .table thead{
+    background:#000;
+}
+
+.dark-mode .form-box{
+    background:#1e1e1e;
+    color:#fff;
+}
+
+.dark-mode .form-control{
+    background:#2b2b2b;
+    color:#fff;
+    border:1px solid #555;
+}
+
+.dark-mode .sidebar{
+    background:#000;
+}
+
+
+/* ===========================
+      FADE ANIMATION
+=========================== */
+
+.fade-in{
+    animation:fadeIn .6s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+/* ===========================
+      ICONS
+=========================== */
+
+i{
+    margin-right:8px;
+}
+
+
+/* ===========================
+      LOGOUT BUTTON
+=========================== */
+
+.logout-btn{
+    margin-top:40px;
+}
+
+
+/* ===========================
+      DASHBOARD TITLE
+=========================== */
+
+.dashboard-title{
+    font-size:30px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+
+/* ===========================
+      ALERT
+=========================== */
+
+.alert{
+    border-radius:10px;
+}
+
+
+/* ===========================
+      PAGE LOADER
+=========================== */
+
+.loader{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(255,255,255,.8);
+    z-index:9999;
+}
+
+.loader::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:60px;
+    height:60px;
+
+    border:6px solid #ddd;
+    border-top:6px solid #0d6efd;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+.login-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+.login-container {
+    background-image:
+    linear-gradient(
+        rgba(255,255,255,0.85),
+        rgba(255,255,255,0.85)
+    ),
+    url("/static/logo.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 350px;
+
+}
+
+
+.login-card {
+
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+
+}
+
+
+.captcha-box {
+
+    background: #212529;
+    color: white;
+    padding: 8px 20px;
+    font-size: 22px;
+    letter-spacing: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+
+}
+ .login-container {
+    min-height: 100vh;
+
+    background-image:
+    linear-gradient(
+        rgba(255,255,255,0.85),
+        rgba(255,255,255,0.85)
+    ),
+    url("/static/logo.png");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 350px;
+}
+.login-container {
+
+    min-height: 100vh;
+
+    background-image: url("/static/logo.png");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: 300px;
+
+}
